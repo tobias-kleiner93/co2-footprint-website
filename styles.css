@@ -1,0 +1,16 @@
+header {
+    background-color: #CEAC71 ;
+    font-size: 25px;
+
+}
+
+body {
+    background-color: rgb(172, 246, 172);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+footer {
+    background-color: #CEAC71 ;
+}
