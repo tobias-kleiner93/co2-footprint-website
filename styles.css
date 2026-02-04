@@ -1,16 +1,39 @@
 header {
-    background-color: #CEAC71 ;
-    font-size: 25px;
-
+  background-color: #CEAC71;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 12px 16px;
 }
 
 body {
-    background-color: rgb(172, 246, 172);
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-    line-height: 1.5;
-    font-size: 16px;
+  background-color: rgb(172, 246, 172);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  line-height: 1.5;
+  font-size: 16px;
 }
 
 footer {
-    background-color: #CEAC71 ;
+  background-color: #CEAC71;
 }
+
+/* Menü-Liste horizontal darstellen */
+.global-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 12px;
+  padding: 0;
+  margin: 0;
+}
+
+/* LTR: Navigation nach rechts schieben (Logo links, Menü rechts) */
+html[dir="ltr"] .global-nav {
+  margin-left: auto;
+}
+
+/* RTL: Navigation nach links schieben (Logo rechts, Menü links) */
+html[dir="rtl"] .global-nav {
+  margin-right: auto;
+}
+
