@@ -29,39 +29,60 @@
     </section>
 
     <section id="emissionen">
+      <h2>Übersicht der CO₂-Emissionen</h2>
+    
+      <div class="controls">
+        <label>
+          Land:
+          <select id="filter-land">
+            <option value="">Alle</option>
+          </select>
+        </label>
+    
+        <label>
+          Unternehmen:
+          <input id="filter-company" type="text" placeholder="z. B. EcoTech">
+        </label>
+    
+        <label>
+          Sortieren nach:
+          <select id="sort-by">
+            <option value="land">Land</option>
+            <option value="unternehmen">Unternehmen</option>
+            <option value="co2">CO₂ (t)</option>
+          </select>
+        </label>
+    
+        <label>
+          Reihenfolge:
+          <select id="sort-dir">
+            <option value="asc">Aufsteigend</option>
+            <option value="desc">Absteigend</option>
+          </select>
+        </label>
+      </div>
+    
+      <!-- table-wrapper bleibt! -->
       <div class="table-wrapper">
-      <table>
-        <tr>
-          <th>Land</th>
-          <th>Unternehmen 1</th>
-          <th>Branche</th>
-          <th>Wappen</th>
-          <th>CO₂-Emissionen (t)</th>
-        </tr>
-
-        <tr>
-          <td>Name 1</td>
-          <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga, at?</td>
-          <td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse, incidunt.</td>
-          <td><img src="assets/wappen_de.webp" alt="#" width="50"></td>
-        </tr>
-
-        <tr>
-          <td>Name 2</td>
-          <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, a.</td>
-          <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, cumque?</td>
-          <td><img src="assets/wappen_de.webp" alt="#" width="50"></td>
-        </tr>
-
-        <tr>
-          <td>Name 3</td>
-          <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, officia.</td>
-          <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, nemo.</td>
-          <td><img src="assets/wappen_de.webp" alt="#" width="50"></td>
-        </tr>
-      </table>
+        <table>
+          <thead>
+            <tr>
+              <th>Land</th>
+              <th>Unternehmen</th>
+              <th>Branche</th>
+              <th>Jahr</th>
+              <th>CO₂-Emissionen (t)</th>
+            </tr>
+          </thead>
+    
+          <!-- tbody mit ID bleibt für JS -->
+          <tbody id="co2-tbody">
+            <!-- wird durch JavaScript gefüllt -->
+          </tbody>
+        </table>
       </div>
     </section>
+    
 
     <section id="ueber-uns">
       <h2>Über uns</h2>
@@ -77,5 +98,6 @@
       </ul>
     </nav>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
