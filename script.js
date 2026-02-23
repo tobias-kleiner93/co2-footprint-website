@@ -62,9 +62,17 @@ function fillLandDropdown(data) {
 
 const filterCompany = document.querySelector("#filter-company");
 
+//Eingabe entschärfen
+function sanitizeInput(value) {
+  return value.replace(/[<>]/g, "");
+}
+
 function applyFilter(data) {
   const landValue = filterLand.value;
-  const companyValue = filterCompany.value.trim().toLowerCase();
+  const companyValue = sanitizeInput(filterCompany.value)
+  .trim()
+  .toLowerCase();
+
 
   return data.filter(d => {
     const landOk = !landValue || d.land === landValue;
@@ -74,6 +82,9 @@ function applyFilter(data) {
 }
 const sortBy = document.querySelector("#sort-by");
 const sortDir = document.querySelector("#sort-dir");
+
+//Status-Element aus HTML holen (sichere Ausgabe per textContent)
+const filterStatus = document.querySelector("#filter-status");
 
 function applySort(data) {
   const key = sortBy.value;
@@ -91,6 +102,11 @@ function applySort(data) {
 function updateView() {
     const filtered = applyFilter(co2Data);
     const sorted = applySort(filtered);
+
+    //Sichere Ausgabe (kein innerHTML, daher keine Code-Ausführung möglich)
+    filterStatus.textContent =
+    `Filter aktiv – Land: ${filterLand.value || "Alle"}, Unternehmen: ${filterCompany.value || "Alle"}. Treffer: ${sorted.length}`;
+
     renderTable(sorted);
   }
   
