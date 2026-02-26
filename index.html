@@ -13,7 +13,7 @@
 
 <body>
   <div class="container my-4">
-  <header class="d-flex align-items-center gap-3 py-3 mb-4 border-bottom">
+  <header class="d-flex flex-wrap align-items-center gap-3 py-3 mb-4 border-bottom">
     <img
   src="assets/logo.png"
   alt="Logo der Klimaschutz-Organisation"
@@ -23,13 +23,35 @@
 
     <h1 class="h3 m-0">Einblick in CO₂-Emissionen von Ländern und Unternehmen</h1>
 
-    <nav class="global-nav ms-auto">
-      <ul class="list-unstyled d-flex gap-3 m-0">
-        <li><a class="link-primary text-decoration-none" href="#allgemeines">Allgemeines</a></li>
-        <li><a class="link-primary text-decoration-none" href="#emissionen">Übersicht der CO₂-Emissionen</a></li>
-        <li><a class="link-primary text-decoration-none" href="#ueber-uns">Über uns</a></li>
-      </ul>
-    </nav>
+    <nav class="global-nav navbar navbar-expand-lg ms-auto navbar-light">
+  <!-- Burger-Button (erscheint unterhalb "lg") -->
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-bs-toggle="collapse"
+    data-bs-target="#mainNavbar"
+    aria-controls="mainNavbar"
+    aria-expanded="false"
+    aria-label="Navigation umschalten"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Einklappbarer Bereich -->
+  <div class="collapse navbar-collapse" id="mainNavbar">
+    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+      <li class="nav-item">
+        <a class="nav-link" href="#allgemeines">Allgemeines</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#emissionen">Übersicht der CO₂-Emissionen</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#ueber-uns">Über uns</a>
+      </li>
+    </ul>
+  </div>
+</nav>
   </header>
 
   <main>
