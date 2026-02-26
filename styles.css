@@ -1,5 +1,6 @@
 header {
-  background-color: #CEAC71;
+  background-color: #1F6F5B;
+  color: white;
   font-size: 25px;
   display: flex;
   align-items: center;
@@ -9,7 +10,7 @@ header {
 }
 
 body {
-  background-color: rgb(172, 246, 172);
+  background-color: #F5F7F6;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
   line-height: 1.5;
   font-size: 1rem; /* statt fixer Pixel */
@@ -17,7 +18,8 @@ body {
 }
 
 footer {
-  background-color: #CEAC71;
+  background-color: #1F6F5B;
+  color: white;
 }
 
 /* Menü-Liste horizontal darstellen */
@@ -27,6 +29,19 @@ footer {
   gap: 12px;
   padding: 0;
   margin: 0;
+
+}
+
+/* Links im Header und Footer lesbar machen */
+header .nav-link,
+header a,
+footer a {
+  color: white !important;
+}
+
+header a:hover,
+footer a:hover {
+  text-decoration: underline;
 }
 
 /* LTR: Navigation nach rechts schieben (Logo links, Menü rechts) */
@@ -107,4 +122,30 @@ th, td {
 .controls input,
 .controls select {
   padding: 6px 8px;
+}
+
+
+section h2 {
+  text-align: center;
+}
+
+section {
+  margin-bottom: 60px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Sections abwechselnd einfärben */
+main section:nth-of-type(odd) {
+  background-color: #FFFFFF;
+}
+
+main section:nth-of-type(even) {
+  background-color: #DCE9E3;
+}
+
+header .nav-link,
+header a,
+footer a {
+  color: white !important;
 }
