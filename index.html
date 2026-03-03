@@ -1,271 +1,277 @@
 <!DOCTYPE html>
 <html lang="de" dir="ltr">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Einblick in CO₂-Emissionen von Ländern und Unternehmen</title>
-  <link 
-      rel="stylesheet" 
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-  />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
   <header class="sticky-top d-flex flex-wrap align-items-center gap-3 py-3 mb-4 border-bottom">
-    <img
-  src="assets/logo_final.png"
-  alt="Logo der Klimaschutz-Organisation"
-  class="img-fluid"
-  style="max-width:120px;"
->
+    <img src="assets/logo_final.png" alt="Logo der Klimaschutz-Organisation" class="img-fluid" style="max-width:120px;">
 
     <h1 class="h3 m-0">Einblick in CO₂-Emissionen von Ländern und Unternehmen</h1>
 
     <nav class="global-nav navbar navbar-expand-lg ms-auto navbar-light">
-  <!-- Burger-Button (erscheint unterhalb "lg") -->
-  <button
-    class="navbar-toggler"
-    type="button"
-    data-bs-toggle="collapse"
-    data-bs-target="#mainNavbar"
-    aria-controls="mainNavbar"
-    aria-expanded="false"
-    aria-label="Navigation umschalten"
-  >
-    <span class="navbar-toggler-icon"></span>
-  </button>
+      <!-- Burger-Button (erscheint unterhalb "lg") -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+        aria-controls="mainNavbar" aria-expanded="false" aria-label="Navigation umschalten">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-  <!-- Einklappbarer Bereich -->
-  <div class="collapse navbar-collapse" id="mainNavbar">
-    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-      <li class="nav-item">
-        <a class="nav-link" href="#allgemeines">Allgemeines</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#emissionen">Übersicht der CO₂-Emissionen</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#ueber-uns">Über uns</a>
-      </li>
-    </ul>
-  </div>
-</nav>
-  </header>
-<div class="container my-4">
-
-  <main>
-    <section id="allgemeines">
-      <h2>Allgemeines</h2>
-<div class="row align-items-center my-5">
-  <div class="col-12 col-lg-6">
-    <h4>Klimawandel als globale Herausforderung</h4>
-    <p>Der Klimawandel stellt eine der größten globalen Herausforderungen des 21. Jahrhunderts dar. Wissenschaftliche Erkenntnisse zeigen eindeutig, dass der menschengemachte Ausstoß von Treibhausgasen, insbesondere Kohlendioxid (CO₂), maßgeblich zur Erderwärmung beiträgt. Die Folgen sind weltweit spürbar und reichen von steigenden Durchschnittstemperaturen über häufigere Extremwetterereignisse bis hin zu Veränderungen von Ökosystemen und Lebensräumen. Diese Entwicklungen betreffen nicht nur Umwelt und Biodiversität, sondern haben auch erhebliche Auswirkungen auf Wirtschaft, Gesellschaft und politische Stabilität.</p>
-  </div>
-
-  <div class="col-12 col-lg-6">
-    <img
-      src="assets/klimawandeln.png"
-      alt="Klimawandel"
-      class="img-fluid rounded"
-    >
-  </div>
-
-      <div class="row align-items-center my-5">
-
-  <div class="col-12 col-lg-6">
-    <img
-      src="assets/co2.png"
-      alt="CO2 Emissionen"
-      class="img-fluid rounded"
-    >
-  </div>
-
-  <div class="col-12 col-lg-6">
-    <h4>Bedeutung von CO₂-Emissionen</h4>
-    <p>CO₂-Emissionen entstehen vor allem durch die Verbrennung fossiler Energieträger wie Kohle, Erdöl und Erdgas sowie durch industrielle Produktionsprozesse, Transport, Landwirtschaft und Energieerzeugung. Unternehmen und Staaten spielen daher eine zentrale Rolle bei der Reduktion von Emissionen und der Umsetzung nachhaltiger Transformationsprozesse. Eine transparente Darstellung von Emissionsdaten ist ein wichtiger Schritt, um Verantwortlichkeiten sichtbar zu machen und fundierte Entscheidungen in Politik, Wirtschaft und Gesellschaft zu ermöglichen.</p>
-  </div>
-
-</div>
-      <div class="row align-items-center my-5">
-
-  <div class="col-12 col-lg-6">
-    <h4>Ziel dieser Plattform</h4>
-    <p>Diese Plattform wurde entwickelt, um eine leicht zugängliche, verständliche und transparente Übersicht über CO₂-Emissionen ausgewählter Länder und Unternehmen bereitzustellen. Ziel ist es, das Bewusstsein für Emissionsquellen zu stärken, Zusammenhänge sichtbar zu machen und datenbasierte Diskussionen über Klimaschutzmaßnahmen zu fördern. Durch die Bereitstellung strukturierter Informationen möchten wir dazu beitragen, dass sowohl Fachpersonen als auch interessierte Bürger:innen Einblicke in die Emissionsentwicklung erhalten und nachhaltige Entscheidungen unterstützen können.</p>
-  </div>
-
-  <div class="col-12 col-lg-6">
-    <img
-      src="assets/ziel_plattform.png"
-      alt="Plattform Ziel"
-      class="img-fluid rounded"
-    >
-  </div>
-
-</div>
-      <div class="my-5">
-  <h4>Funktionsweise der Datendarstellung</h4>
-  <p>Im weiteren Verlauf der Webseite wird eine tabellarische Übersicht präsentiert, die fiktive CO₂-Emissionsdaten verschiedener Länder und Unternehmen enthält. Diese Daten können nach unterschiedlichen Kriterien sortiert und gefiltert werden, wodurch Nutzer:innen gezielt Informationen abrufen und vergleichen können. Die interaktive Gestaltung der Tabelle ermöglicht eine intuitive Navigation und unterstützt die Analyse von Emissionstrends, Branchenunterschieden und länderspezifischen Entwicklungen.</p>
-</div>
-
-<div class="my-5">
-  <h4>Transparenz als Grundlage für Klimaschutz</h4>
-  <p>Transparenz stellt einen zentralen Baustein effektiver Klimapolitik dar. Nur wenn Emissionen nachvollziehbar dokumentiert und öffentlich zugänglich gemacht werden, können Fortschritte bewertet, Maßnahmen überprüft und Verantwortlichkeiten klar zugeordnet werden. Unsere Plattform versteht sich daher als Beitrag zu einer offenen Informationskultur, die evidenzbasierte Entscheidungsprozesse fördert und den gesellschaftlichen Dialog über Klimaschutz stärkt.</p>
-</div>
-    </section>
-
-    <section id="emissionen">
-      <h2>Übersicht der CO₂-Emissionen</h2>
-    
-      <div class="controls row g-3 align-items-end mb-2">
-        
-        <div class="col-12 col-md-6 col-lg-3">
-  <label class="form-label" for="filter-land">Land</label>
-
-  <select id="filter-land" class="form-select">
-    <option value="">Alle</option>
-  </select>
-</div>
-        
-        <div class="col-12 col-md-6 col-lg-3">
-  <label class="form-label" for="filter-company">Unternehmen</label>
-  <input
-    id="filter-company"
-    type="text"
-    class="form-control"
-    placeholder="z. B. EcoTech"
-  >
-</div>
-    
-        <div class="col-12 col-md-6 col-lg-3">
-  <label class="form-label" for="sort-by">Sortieren nach</label>
-  <select id="sort-by" class="form-select">
-    <option value="land">Land</option>
-    <option value="unternehmen">Unternehmen</option>
-    <option value="co2">CO₂ (t)</option>
-  </select>
-</div>
-    
-        <div class="col-12 col-md-6 col-lg-3">
-  <label class="form-label" for="sort-dir">Reihenfolge</label>
-  <select id="sort-dir" class="form-select">
-    <option value="asc">Aufsteigend</option>
-    <option value="desc">Absteigend</option>
-  </select>
-</div>
+      <!-- Einklappbarer Bereich -->
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#allgemeines">Allgemeines</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#emissionen">Übersicht der CO₂-Emissionen</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#ueber-uns">Über uns</a>
+          </li>
+        </ul>
       </div>
-      <p id="filter-status" class="text-muted mt-2 mb-3" aria-live="polite"></p>
-    
-      <!-- table-wrapper bleibt! -->
-      <div class="table-wrapper">
-        <table class="table table-striped table-hover align-middle">
-          <thead class="table-light">
-            <tr>
-              <th>Land</th>
-              <th>Unternehmen</th>
-              <th>Branche</th>
-              <th>Jahr</th>
-              <th>CO₂-Emissionen (t)</th>
-            </tr>
-          </thead>
-    
-          <!-- tbody mit ID bleibt für JS -->
-          <tbody id="co2-tbody">
-            <!-- wird durch JavaScript gefüllt -->
-          </tbody>
-        </table>
-      </div>
-    </section>
-    
-
-    <section id="ueber-uns">
-      <h2>Über uns</h2>
-      <div class="row align-items-center my-5">
-
-  <!-- Text links -->
-  <div class="col-12 col-lg-6 mb-4 mb-lg-0">
-    <h4 class="mb-3">Wer wir sind</h4>
-    <p>
-      Wir sind eine unabhängige Non-Profit-Organisation, die sich der Förderung von Transparenz, Aufklärung und evidenzbasiertem Handeln im Kontext des Klimawandels widmet. Unser interdisziplinäres Team vereint Fachkenntnisse aus den Bereichen Umweltwissenschaften, Datenanalyse, Politik, Wirtschaft und digitaler Kommunikation, um komplexe Zusammenhänge verständlich darzustellen und zugängliche Informationsangebote zu schaffen.
-    </p>
-  </div>
-
-  <!-- Bild rechts -->
-  <div class="col-12 col-lg-6">
-    <img 
-      src="assets/wer-wir-sind.png" 
-      alt="Team einer Non-Profit-Organisation arbeitet gemeinsam an Klimadaten"
-      class="img-fluid rounded shadow"
-    >
-  </div>
-
-</div>
-      <div class="row align-items-center my-5">
-
-  <!-- Bild links -->
-  <div class="col-12 col-lg-6 mb-4 mb-lg-0">
-    <img 
-      src="assets/unsere-mission.png" 
-      alt="Analyse von CO₂-Emissionsdaten auf einem Laptop mit Diagrammen"
-      class="img-fluid rounded shadow"
-    >
-  </div>
-
-  <!-- Text rechts -->
-  <div class="col-12 col-lg-6">
-    <h4 class="mb-3">Unsere Mission</h4>
-    <p>
-      Unser Ziel ist es, verlässliche und nachvollziehbare Informationen über CO₂-Emissionen bereitzustellen und damit einen Beitrag zu einer informierten öffentlichen Debatte zu leisten. Wir setzen uns dafür ein, dass Emissionsdaten transparenter werden, Verantwortlichkeiten sichtbar sind und nachhaltige Transformationsprozesse in Wirtschaft und Gesellschaft unterstützt werden. Durch digitale Werkzeuge und interaktive Darstellungen möchten wir die Analyse von Emissionsentwicklungen erleichtern und den Zugang zu relevanten Informationen verbessern.
-    </p>
-  </div>
-
-</div>
-      <div class="row align-items-center my-5">
-
-  <!-- Text links -->
-  <div class="col-12 col-lg-6 mb-4 mb-lg-0">
-    <h4 class="mb-3">Wofür wir uns einsetzen</h4>
-    <p>
-      Unsere Arbeit konzentriert sich auf die Förderung von Klimaschutzmaßnahmen, die Stärkung von Datenkompetenz sowie die Unterstützung evidenzbasierter Entscheidungsprozesse. Dabei verfolgen wir einen ganzheitlichen Ansatz, der ökologische, soziale und wirtschaftliche Aspekte berücksichtigt. Wir verstehen Transparenz als Grundlage für Vertrauen, Kooperation und wirksame Klimapolitik.
-    </p>
-  </div>
-
-  <!-- Bild rechts -->
-  <div class="col-12 col-lg-6">
-    <img
-      src="assets/wofuer-wir-uns-einsetzen.png"
-      alt="Team diskutiert Klimaschutzmaßnahmen und Datenanalyse in einem Meeting"
-      class="img-fluid rounded shadow"
-    >
-  </div>
-
-</div>
-      <div class="mb-5">
-  <h4 class="mb-3">Was wir erreichen möchten</h4>
-  <p>
-    Langfristig möchten wir dazu beitragen, dass Emissionsreduktion und nachhaltiges Wirtschaften zu zentralen Leitprinzipien gesellschaftlicher Entwicklung werden. Durch die Bereitstellung verständlicher Daten und Analysen unterstützen wir Akteur:innen aus Politik, Wirtschaft und Zivilgesellschaft dabei, Fortschritte messbar zu machen und wirksame Maßnahmen zu identifizieren.
-  </p>
-</div>
-
-      <div class="mb-5">
-  <h4 class="mb-3">Appell</h4>
-  <p>
-    Klimaschutz ist eine gemeinsame Aufgabe, die nur durch Zusammenarbeit und verantwortungsbewusstes Handeln gelingen kann. Wir laden alle Nutzer:innen ein, sich aktiv mit den bereitgestellten Informationen auseinanderzusetzen, nachhaltige Entscheidungen zu unterstützen und den gesellschaftlichen Dialog über Klimaschutz konstruktiv mitzugestalten. Jede informierte Entscheidung trägt dazu bei, den Weg in eine klimaverträgliche Zukunft zu ebnen.
-  </p>
-</div>
-</section>
-  </main>
-</div>
-  <footer class="py-4 mt-5 border-top">
-  <div class="container">
-    <nav class="d-flex flex-column flex-md-row justify-content-center gap-3">
-      <a href="#" class="text-decoration-none nav-link">Impressum</a>
-      <a href="#" class="text-decoration-none nav-link">Datenschutz</a>
     </nav>
+  </header>
+  <div class="container my-4">
+
+    <main>
+      <section id="allgemeines">
+        <h2>Allgemeines</h2>
+        <div class="row align-items-center my-5">
+          <div class="col-12 col-lg-6">
+            <h4>Klimawandel als globale Herausforderung</h4>
+            <p>Der Klimawandel stellt eine der größten globalen Herausforderungen des 21. Jahrhunderts dar.
+              Wissenschaftliche Erkenntnisse zeigen eindeutig, dass der menschengemachte Ausstoß von Treibhausgasen,
+              insbesondere Kohlendioxid (CO₂), maßgeblich zur Erderwärmung beiträgt. Die Folgen sind weltweit spürbar
+              und reichen von steigenden Durchschnittstemperaturen über häufigere Extremwetterereignisse bis hin zu
+              Veränderungen von Ökosystemen und Lebensräumen. Diese Entwicklungen betreffen nicht nur Umwelt und
+              Biodiversität, sondern haben auch erhebliche Auswirkungen auf Wirtschaft, Gesellschaft und politische
+              Stabilität.</p>
+          </div>
+
+          <div class="col-12 col-lg-6">
+            <img src="assets/klimawandeln.png" alt="Klimawandel" class="img-fluid rounded">
+          </div>
+        </div>
+
+        <div class="row align-items-center my-5">
+
+          <div class="col-12 col-lg-6">
+            <img src="assets/co2.png" alt="CO2 Emissionen" class="img-fluid rounded">
+          </div>
+
+          <div class="col-12 col-lg-6">
+            <h4>Bedeutung von CO₂-Emissionen</h4>
+            <p>CO₂-Emissionen entstehen vor allem durch die Verbrennung fossiler Energieträger wie Kohle, Erdöl und
+              Erdgas sowie durch industrielle Produktionsprozesse, Transport, Landwirtschaft und Energieerzeugung.
+              Unternehmen und Staaten spielen daher eine zentrale Rolle bei der Reduktion von Emissionen und der
+              Umsetzung nachhaltiger Transformationsprozesse. Eine transparente Darstellung von Emissionsdaten ist ein
+              wichtiger Schritt, um Verantwortlichkeiten sichtbar zu machen und fundierte Entscheidungen in Politik,
+              Wirtschaft und Gesellschaft zu ermöglichen.</p>
+          </div>
+
+        </div>
+        <div class="row align-items-center my-5">
+
+          <div class="col-12 col-lg-6">
+            <h4>Ziel dieser Plattform</h4>
+            <p>Diese Plattform wurde entwickelt, um eine leicht zugängliche, verständliche und transparente Übersicht
+              über CO₂-Emissionen ausgewählter Länder und Unternehmen bereitzustellen. Ziel ist es, das Bewusstsein für
+              Emissionsquellen zu stärken, Zusammenhänge sichtbar zu machen und datenbasierte Diskussionen über
+              Klimaschutzmaßnahmen zu fördern. Durch die Bereitstellung strukturierter Informationen möchten wir dazu
+              beitragen, dass sowohl Fachpersonen als auch interessierte Bürger:innen Einblicke in die
+              Emissionsentwicklung erhalten und nachhaltige Entscheidungen unterstützen können.</p>
+          </div>
+
+          <div class="col-12 col-lg-6">
+            <img src="assets/ziel_plattform.png" alt="Plattform Ziel" class="img-fluid rounded">
+          </div>
+
+        </div>
+        <div class="my-5">
+          <h4>Funktionsweise der Datendarstellung</h4>
+          <p>Im weiteren Verlauf der Webseite wird eine tabellarische Übersicht präsentiert, die fiktive
+            CO₂-Emissionsdaten verschiedener Länder und Unternehmen enthält. Diese Daten können nach unterschiedlichen
+            Kriterien sortiert und gefiltert werden, wodurch Nutzer:innen gezielt Informationen abrufen und vergleichen
+            können. Die interaktive Gestaltung der Tabelle ermöglicht eine intuitive Navigation und unterstützt die
+            Analyse von Emissionstrends, Branchenunterschieden und länderspezifischen Entwicklungen.</p>
+        </div>
+
+        <div class="my-5">
+          <h4>Transparenz als Grundlage für Klimaschutz</h4>
+          <p>Transparenz stellt einen zentralen Baustein effektiver Klimapolitik dar. Nur wenn Emissionen
+            nachvollziehbar dokumentiert und öffentlich zugänglich gemacht werden, können Fortschritte bewertet,
+            Maßnahmen überprüft und Verantwortlichkeiten klar zugeordnet werden. Unsere Plattform versteht sich daher
+            als Beitrag zu einer offenen Informationskultur, die evidenzbasierte Entscheidungsprozesse fördert und den
+            gesellschaftlichen Dialog über Klimaschutz stärkt.</p>
+        </div>
+      </section>
+
+      <section id="emissionen">
+        <h2>Übersicht der CO₂-Emissionen</h2>
+
+        <div class="controls row g-3 align-items-end mb-2">
+
+          <div class="col-12 col-md-6 col-lg-3">
+            <label class="form-label" for="filter-land">Land</label>
+
+            <select id="filter-land" class="form-select">
+              <option value="">Alle</option>
+            </select>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3">
+            <label class="form-label" for="filter-company">Unternehmen</label>
+            <input id="filter-company" type="text" class="form-control" placeholder="z. B. EcoTech">
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3">
+            <label class="form-label" for="sort-by">Sortieren nach</label>
+            <select id="sort-by" class="form-select">
+              <option value="land">Land</option>
+              <option value="unternehmen">Unternehmen</option>
+              <option value="co2">CO₂ (t)</option>
+            </select>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-3">
+            <label class="form-label" for="sort-dir">Reihenfolge</label>
+            <select id="sort-dir" class="form-select">
+              <option value="asc">Aufsteigend</option>
+              <option value="desc">Absteigend</option>
+            </select>
+          </div>
+        </div>
+        <p id="filter-status" class="text-muted mt-2 mb-3" aria-live="polite"></p>
+
+        <!-- table-wrapper bleibt! -->
+        <div class="table-wrapper">
+          <table class="table table-striped table-hover align-middle">
+            <thead class="table-light">
+              <tr>
+                <th>Land</th>
+                <th>Unternehmen</th>
+                <th>Branche</th>
+                <th>Jahr</th>
+                <th>CO₂-Emissionen (t)</th>
+              </tr>
+            </thead>
+
+            <!-- tbody mit ID bleibt für JS -->
+            <tbody id="co2-tbody">
+              <!-- wird durch JavaScript gefüllt -->
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+
+      <section id="ueber-uns">
+        <h2>Über uns</h2>
+        <div class="row align-items-center my-5">
+
+          <!-- Text links -->
+          <div class="col-12 col-lg-6 mb-4 mb-lg-0">
+            <h4 class="mb-3">Wer wir sind</h4>
+            <p>
+              Wir sind eine unabhängige Non-Profit-Organisation, die sich der Förderung von Transparenz, Aufklärung und
+              evidenzbasiertem Handeln im Kontext des Klimawandels widmet. Unser interdisziplinäres Team vereint
+              Fachkenntnisse aus den Bereichen Umweltwissenschaften, Datenanalyse, Politik, Wirtschaft und digitaler
+              Kommunikation, um komplexe Zusammenhänge verständlich darzustellen und zugängliche Informationsangebote zu
+              schaffen.
+            </p>
+          </div>
+
+          <!-- Bild rechts -->
+          <div class="col-12 col-lg-6">
+            <img src="assets/wer-wir-sind.png" alt="Team einer Non-Profit-Organisation arbeitet gemeinsam an Klimadaten"
+              class="img-fluid rounded shadow">
+          </div>
+
+        </div>
+        <div class="row align-items-center my-5">
+
+          <!-- Bild links -->
+          <div class="col-12 col-lg-6 mb-4 mb-lg-0">
+            <img src="assets/unsere-mission.png" alt="Analyse von CO₂-Emissionsdaten auf einem Laptop mit Diagrammen"
+              class="img-fluid rounded shadow">
+          </div>
+
+          <!-- Text rechts -->
+          <div class="col-12 col-lg-6">
+            <h4 class="mb-3">Unsere Mission</h4>
+            <p>
+              Unser Ziel ist es, verlässliche und nachvollziehbare Informationen über CO₂-Emissionen bereitzustellen und
+              damit einen Beitrag zu einer informierten öffentlichen Debatte zu leisten. Wir setzen uns dafür ein, dass
+              Emissionsdaten transparenter werden, Verantwortlichkeiten sichtbar sind und nachhaltige
+              Transformationsprozesse in Wirtschaft und Gesellschaft unterstützt werden. Durch digitale Werkzeuge und
+              interaktive Darstellungen möchten wir die Analyse von Emissionsentwicklungen erleichtern und den Zugang zu
+              relevanten Informationen verbessern.
+            </p>
+          </div>
+
+        </div>
+        <div class="row align-items-center my-5">
+
+          <!-- Text links -->
+          <div class="col-12 col-lg-6 mb-4 mb-lg-0">
+            <h4 class="mb-3">Wofür wir uns einsetzen</h4>
+            <p>
+              Unsere Arbeit konzentriert sich auf die Förderung von Klimaschutzmaßnahmen, die Stärkung von
+              Datenkompetenz sowie die Unterstützung evidenzbasierter Entscheidungsprozesse. Dabei verfolgen wir einen
+              ganzheitlichen Ansatz, der ökologische, soziale und wirtschaftliche Aspekte berücksichtigt. Wir verstehen
+              Transparenz als Grundlage für Vertrauen, Kooperation und wirksame Klimapolitik.
+            </p>
+          </div>
+
+          <!-- Bild rechts -->
+          <div class="col-12 col-lg-6">
+            <img src="assets/wofuer-wir-uns-einsetzen.png"
+              alt="Team diskutiert Klimaschutzmaßnahmen und Datenanalyse in einem Meeting"
+              class="img-fluid rounded shadow">
+          </div>
+
+        </div>
+        <div class="mb-5">
+          <h4 class="mb-3">Was wir erreichen möchten</h4>
+          <p>
+            Langfristig möchten wir dazu beitragen, dass Emissionsreduktion und nachhaltiges Wirtschaften zu zentralen
+            Leitprinzipien gesellschaftlicher Entwicklung werden. Durch die Bereitstellung verständlicher Daten und
+            Analysen unterstützen wir Akteur:innen aus Politik, Wirtschaft und Zivilgesellschaft dabei, Fortschritte
+            messbar zu machen und wirksame Maßnahmen zu identifizieren.
+          </p>
+        </div>
+
+        <div class="mb-5">
+          <h4 class="mb-3">Appell</h4>
+          <p>
+            Klimaschutz ist eine gemeinsame Aufgabe, die nur durch Zusammenarbeit und verantwortungsbewusstes Handeln
+            gelingen kann. Wir laden alle Nutzer:innen ein, sich aktiv mit den bereitgestellten Informationen
+            auseinanderzusetzen, nachhaltige Entscheidungen zu unterstützen und den gesellschaftlichen Dialog über
+            Klimaschutz konstruktiv mitzugestalten. Jede informierte Entscheidung trägt dazu bei, den Weg in eine
+            klimaverträgliche Zukunft zu ebnen.
+          </p>
+        </div>
+      </section>
+    </main>
   </div>
-</footer>
+  <footer class="py-4 mt-5 border-top">
+    <div class="container">
+      <nav class="d-flex flex-column flex-md-row justify-content-center gap-3">
+        <a href="#" class="text-decoration-none nav-link">Impressum</a>
+        <a href="#" class="text-decoration-none nav-link">Datenschutz</a>
+      </nav>
+    </div>
+  </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="script.js"></script>
 </body>
+
 </html>
